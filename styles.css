@@ -1,0 +1,61 @@
+
+*{
+    box-sizing: border-box;
+  
+   /*//display: flex;*/
+   /*flex-direction: column;*/
+
+
+  }
+  title{
+      display:none;
+
+  }
+
+.title{
+    color:blue;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    text-shadow: 2px 2px 5px white;
+}
+.paragraph-feedback{
+    
+}
+.container{
+
+    text-align: :center; 
+    color:black;
+    width:70%;
+    height: 50%;
+    margin:auto;
+    border:1px solid black;
+    background: rgba(210,235,200,0.9);
+}
+ul{
+
+    text-shadow: 1px 1px 2px lightblue;
+}
+body{
+
+    background-image:url("https://www.fortinet.com/content/fortinet-blog/us/en/industry-trends/recent-healthcare-regulations-and-guidelines-providers-should-be/_jcr_content/root/responsivegrid/text_image.img.jpeg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+.score{
+    text-align: center;
+    font-size:30px;
+    color:black;
+}

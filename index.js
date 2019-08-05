@@ -231,58 +231,57 @@ function feedback(value){
      }  
      correctanswer=nextChar(correctanswer);
     };
-    if(value===true){
-        score++;
-        
-        $(".submit").remove();
-        $(".answersinputs").remove();
-        $(".title").remove();
-        $(".content").append('<h1 class="title">You answered correctly!</h1>'+
-        '<button class="submit" id="submit-answer">Continue</button>'
-         +'<div class="score"> Quiz score:'+score+'/'+(counter+1)+'<div>'
-        );
-        counter++;
-            if(counter>questions.length-1){
-            $(".submit").html('start over?');
-            console.log("i got here");
-            $(".submit").on("click",function(){
-             startOver();
-            });
+        if(value===true){
+            score++;
+            
+            $(".submit").remove();
+            $(".answersinputs").remove();
+            $(".title").remove();
+            $(".content").append('<h1 class="title">You answered correctly!</h1>'+
+            '<button class="submit" id="submit-answer">Continue</button>'
+            +'<div class="score"> Quiz score:'+score+'/'+(counter+1)+'<div>'
+            );
+            counter++;
+                if(counter>questions.length-1){
+                $(".submit").html('start over?');
+                $(".submit").on("click",function(){
+                startOver();
+                });
+                }
+            else{
+                //after i cleck a submit button th score should be delted adn then appended at the bottomof content
+                $(".submit").on("click",function(event){
+                    $(".score").remove();
+                    creatNextQuestion(counter);
+                });
+                }
             }
         else{
-            //after i cleck a submit button th score should be delted adn then appended at the bottomof content
+            
+            $(".submit").remove();
+            $(".answersinputs").remove();
+            $(".title").remove();
+            $(".content").append('<h1 class="title">You answered incorrectly!</h1>'+
+            '<p class="paragraph-feedback">The correct answer was:'+'<br></br>'+questions[counter].answers[correctanswer]+'</p>'
+            +'<button class="submit" id="submit-answer">Continue</button>'
+            +'<div class="score"> Quiz score:'+score+'/'+(counter+1)+'<div>'
+            );
+            
+            counter++;
+            if(counter>questions.length-1){//when the questions are out start over ;
+                $(".submit").html('start over?');
+                $(".content").append('<div class="score"> Quiz score:'+score+'/'+(counter+1)+'<div>');
+                console.log("i got here");
+                $(".submit").on("click",function(event){
+                startOver();
+                });
+            }
             $(".submit").on("click",function(event){
+                $(".paragraph-feedback").remove();
                 $(".score").remove();
                 creatNextQuestion(counter);
             });
             }
-        }
-    else{
-        
-        $(".submit").remove();
-        $(".answersinputs").remove();
-        $(".title").remove();
-        $(".content").append('<h1 class="title">You answered incorrectly!</h1>'+
-        '<p class="paragraph-feedback">The correct answer was:'+'<br></br>'+questions[counter].answers[correctanswer]+'</p>'
-        +'<button class="submit" id="submit-answer">Continue</button>'
-        +'<div class="score"> Quiz score:'+score+'/'+(counter+1)+'<div>'
-        );
-        
-        counter++;
-        if(counter>questions.length-1){//when the questions are out start over ;
-            $(".submit").html('start over?');
-            $(".content").append('<div class="score"> Quiz score:'+score+'/'+(counter+1)+'<div>');
-            console.log("i got here");
-            $(".submit").on("click",function(event){
-             startOver();
-            });
-        }
-        $(".submit").on("click",function(event){
-            $(".paragraph-feedback").remove();
-            $(".score").remove();
-            creatNextQuestion(counter);
-         });
-        }
 }
     //on submit of the continue button the createNextQuestion is called
    //counter++;

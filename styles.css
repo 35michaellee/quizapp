@@ -13,27 +13,22 @@
   }
 
 .title{
-    color:blue;
-    font-family: 'Roboto Mono', monospace;
+    color:#333D51 ;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     text-shadow: 2px 2px 5px white;
-}
-.paragraph-feedback{
-    
 }
 .container{
 
     text-align: :center; 
+    font-family: 'Merriweather', serif;
+    text-shadow: 1px 1px 2px lightblue;
     color:black;
     width:70%;
     height: 50%;
     margin:auto;
     border:1px solid black;
-    background: rgba(210,235,200,0.9);
-}
-ul{
-
-    text-shadow: 1px 1px 2px lightblue;
+    background: rgba(255,255,255,0.9);
 }
 body{
 
@@ -42,7 +37,7 @@ body{
     background-size: cover;
 }
 button{
-  background-color: #4CAF50;
+  background-color: #D3AC2B;
   border: none;
   color: white;
   padding: 15px 32px;

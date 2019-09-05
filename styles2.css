@@ -1,0 +1,25 @@
+.container{
+
+    text-align: :center; 
+    font-family: 'Merriweather', serif;
+    text-align:center;
+    width:70%;
+    height: 50%;
+    margin:auto;
+    border:1px solid black;
+}
+li{
+
+}
+.feedback{
+
+} 
+.score{
+
+}
+.submit{
+
+}
+.answers{
+    text-align: left;
+}

@@ -7,19 +7,58 @@
     height: 50%;
     margin:auto;
     border:1px solid black;
+    background: rgb(252, 250, 218,.9);
 }
-li{
-
-}
-.feedback{
-
-} 
-.score{
-
-}
-.submit{
-
+body{
+    transition-property: background-color;
+  transition-duration: 3s;
+    background: #8cccd4;
 }
 .answers{
     text-align: left;
 }
+.hidden{
+    display: none;
+}
+.button{
+    background-color: #1dbfbf;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+}
+
+
+
+    /* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+    .container{
+
+    }
+
+    }
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .container{
+        
+        }
+    
+    }
+   
+    /* Desktops and laptops ----------- */
+    @media only screen  and (min-width : 1224px) {
+        .container{
+        
+        }
+
+    }
+    
+   

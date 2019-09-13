@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles2.css">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles2.css">
 </head>
+
 <body>
+        <main>
+
+                <div class="beginning container">
+                        <h1>Welcome to the health quiz</h1>
+                        <button class="submit button">start quiz</button>
+                        <p class="score hidden">score</p>
+
+                </div>
+                <div class="questiondiv container hidden">
+                        <h1 class="question">Question</h1>
+                        <p class="currentscore">                               
+                        </p>
+                        <form id='form' class="answers">
+                                <fieldset>
+                                        <legend>Please choose your answer</legend>
+                                        <input class="radiobutton" id='a' name="answer" type="radio" value=''><label
+                                                id='labela' for='a'>a</label> <br />
+                                        <input class="radiobutton" id='b' name="answer" type="radio" value=''><label
+                                                id='labelb' for='b'>b</label> <br />
+                                        <input class="radiobutton" id='c' name="answer" type="radio" value=''><label
+                                                id='labelc' for='c'>c</label> <br />
+                                        <input class="radiobutton" id='d' name="answer" type="radio" value=''><label
+                                                id='labeld' for='d'>d</label> <br />
+                                </fieldset>
+                        </form>
+                        <button class="questionsubmit button">submit</button>
+                        <p class="hidden score">score</p>
+                </div>
+                <div class="feedbackdiv container hidden">
 
 
-        <div class="beginning container">
-                 <h1>Welcome to the health quiz</h1>
-                <button class="submit button">start quiz</button>
-                <p class="score hidden">score</p>
-                
-        </div>
-        <div class="questiondiv container hidden">
-                <h1 class= "question">Question</h1>
-                <form id='form' class = "answers">
-                      <ul>
-                          <input  class="radiobutton" id='a' name="answer" type="radio" value=''><label id='labela' for ='a'>a</label> <br/>
-                          <input  class="radiobutton" id='b' name="answer" type="radio" value=''><label id='labelb' for ='b'>b</label> <br/>
-                          <input  class="radiobutton" id='c' name="answer" type="radio" value=''><label id='labelc' for ='c'>c</label> <br/>
-                          <input  class="radiobutton" id='d' name="answer" type="radio" value=''><label id='labeld' for ='d'>d</label> <br/>
-                    </ul>  
-                </form>
-                <button class="questionsubmit button">submit</button>
-                <p class="hidden score">score</p>
-        </div>
-        <div class="feedbackdiv container hidden">
-                
 
 
+                </div>
+                <div class="startoverdiv container hidden">
 
-        </div>
-       <div class="startoverdiv container hidden">
+                </div>
 
-       </div>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src=index2.js></script>
-    
+
 </body>
+
 </html>

@@ -131,13 +131,13 @@ function loadQuestions() {
         startOver();
     }
     else {
-        $('.currentscore').html(`question: ${counter+1} of ${questions.length}, score:${score}`);
+        $('.currentscore').html(`question: ${counter + 1} of ${questions.length}, score:${score}`);
         $('.radiobutton').prop('checked', false);
         $('.feedbackdiv').addClass('hidden');
         $('.feedbackdiv').html('');;// this needs to work and its not
         $('.questiondiv').removeClass('hidden');
         let startchar = 'a';
-        let inputs = document.getElementById('form').getElementsByTagName('input');
+        let inputs = $('input[type="radio"]');
         let questionTitle = questions[counter].question;
         $('.question').html(questionTitle);
         for (var i = 0; i < inputs.length; i++) {
@@ -180,7 +180,7 @@ function givefeedback(answer) {
         });
 
     } else {
-        const rightAnswer =  questions[counter].answers[questions[counter].corrects]
+        const rightAnswer = questions[counter].answers[questions[counter].corrects]
         $('.feedbackdiv').removeClass('hidden');
         $('.feedbackdiv').append(`
         <h1>
@@ -211,20 +211,23 @@ function isOneChecked() {
     return false;
 }
 function begin() {
-    $(".submit").on("click", function (event) {
+    const submitHandler = function (event) {
         event.preventDefault();
         $('.beginning').html('');//clears the html of the div class
         $('.beginning').addClass('hidden');
         $('.questiondiv').removeClass('hidden');
         loadQuestions();
-    });
+    }
+
+    $("#form").on("submit", submitHandler);
+    $(".startquiz").on("click", submitHandler);
 }
 function startOver() {
     $('.startOver').on("click", function (event) {
         counter = 0;
         score = 0;
         $('.beginning').html(`<h1>welcome to the quiz</h1>
-            <button class="submit button">start quiz</button>
+            <button class="startquiz submit button">start quiz</button>
             <p class="score hidden">score</p>`);
         $('.radiobutton').prop('checked', false);///unchecks any radio buttons
 

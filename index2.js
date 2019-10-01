@@ -9,17 +9,17 @@ const q1 = {
         a: "Lunch is , beacause it is the part of the day you are most active.",
         b: "Dinner becuase you are choosing the last thing that goes in your body",
         c: "Snacks thoughout the day are best. Meals are a lie.",
-        d: "Breakfast becase it determines your hormonal response for the rest of the day."
+        d: "Breakfast because it determines your hormonal response for the rest of the day."
     },
     corrects: 'd',
 };
 const q2 = {
     question: "What are the main macronutrients in food?",
     answers: {
-        a: "protiens,fats and sugars.",
-        b: "protiens,fats,and carbohydrates",
-        c: "carbohydrates,sugars, and fats",
-        d: "protiens,carbohydrates, and oxygen"
+        a: "Proteins ,fats and sugars.",
+        b: "Proteins ,fats,and carbohydrates",
+        c: "Carbohydrates,sugars, and fats",
+        d: "Proteins ,carbohydrates, and oxygen"
 
     },
     corrects: 'b',
@@ -27,9 +27,9 @@ const q2 = {
 const q3 = {
     question: "A nutrient that makes half your body is __",
     answers: {
-        a: "fats",
-        b: "protiens",
-        c: "vitamins",
+        a: "Fats",
+        b: "Proteins ",
+        c: "Vitamins",
         d: "water"
     },
     corrects: 'd',
@@ -38,10 +38,10 @@ const q4 = {
     question: "Nutrients that provide and promote healthy skin and normal growth.",
     answers:
     {
-        a: "fats",
-        b: "protiens",
-        c: "vitamins",
-        d: "water"
+        a: "Fats",
+        b: "Proteins ",
+        c: "Vitamins",
+        d: "Water"
     },
     corrects: 'a',
 };
@@ -49,52 +49,52 @@ const
     q5 = {
         question: "Baked or boiled foods have less _________ than fried foods.",
         answers: {
-            a: "bacteria",
-            b: "choloesteral",
-            c: "fat",
-            d: "sodium"
+            a: "Bacteria",
+            b: "Choloesteral",
+            c: "Fat",
+            d: "Sodium"
 
         },
         corrects: 'c',
 
     };
 const q6 = {
-    question: "The amount of ______________ a person eats can be deceased by not putting salt in food",
+    question: "The amount of ______________ a person eats can be decreased by decreasing the salt in food they consume",
     answers: {
-        a: "sugar",
-        b: "salt",
-        c: "hormones",
-        d: "anxiety"
+        a: "Sugar",
+        b: "Salt",
+        c: "Hormones",
+        d: "Anxiety"
     },
     corrects: 'd',
 };
 const q7 = {
     question: "The Psycological desire for food is",
     answers: {
-        a: "apetite",
-        b: "calorie",
-        c: "hungry",
-        d: "nutrient deficiency"
+        a: "Apetite",
+        b: "Calorie",
+        c: "Hungry",
+        d: "Nutrient deficiency"
     },
     corrects: 'a',
 };
 const q8 = {
     question: "a shortage of a nutrient is called",
     answers: {
-        a: "apetite",
-        b: "calorie",
-        c: "hungry",
-        d: "nutrient deficiency"
+        a: "Apetite",
+        b: "Calorie",
+        c: "Hungry",
+        d: "Nutrient deficiency"
     },
     corrects: 'd',
 };
 const q9 = {
     question: "a unit of available energy in different foods is",
     answers: {
-        a: "obesity",
-        b: "calorie",
-        c: "weight control",
-        d: "desired weight"
+        a: "Obesity",
+        b: "Calorie",
+        c: "Weight control",
+        d: "Desired weight"
 
     },
     corrects: 'b',
@@ -102,10 +102,10 @@ const q9 = {
 const q10 = {
     question: "the nutrient that helps builds muscle and cells is",
     answers: {
-        a: "water",
-        b: "protien",
-        c: "fiber",
-        d: "cholesterol"
+        a: "Water",
+        b: "Protien",
+        c: "Fiber",
+        d: "Cholesterol"
     },
     corrects: 'd',
 };
